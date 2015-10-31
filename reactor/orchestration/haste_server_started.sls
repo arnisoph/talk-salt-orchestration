@@ -3,4 +3,4 @@ update_haproxy_config:
     - name: update haproxy config
     - tgt: fe*
     - arg:
-      - saltbox.orchestration.haproxy
+      - orchestration.haproxy

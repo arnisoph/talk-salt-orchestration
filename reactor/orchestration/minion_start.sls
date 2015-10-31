@@ -8,4 +8,4 @@ bootstrap_minion:
     - name: bootstrap minion
     - tgt: {{ data['id'] }}
     - arg:
-      - saltbox.orchestration.bootstrap
+      - orchestration.bootstrap
