@@ -2,7 +2,7 @@ redis:
   pkg:
     - installed
     - pkgs:
-      - redis
+      - redis-server
   file:
     - managed
     - name: /etc/redis.conf
