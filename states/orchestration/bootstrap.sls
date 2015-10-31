@@ -21,10 +21,19 @@ salt_minion:
     - name: salt-minion
     - enable: True
 
+#minion_config_updated:
+#  event:
+#    - wait
+#    - name: custom/minion/config_updated
+#    - watch:
+#      - file: salt_minion
+#    - require:
+#      - service: salt_minion
+
 minion_config_updated:
-  event:
-    - wait
-    - name: custom/minion/config_updated
+  module:
+    - run
+    - name: state.highstate
     - watch:
       - file: salt_minion
     - require:
