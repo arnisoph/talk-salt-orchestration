@@ -1,0 +1,18 @@
+[submodule "saltstack-assets/saltstack-zsh-formula"]
+	path = saltstack-assets/saltstack-zsh-formula
+	url = https://github.com/bechtoldt/saltstack-zsh-formula
+[submodule "saltstack-assets/saltstack-git-formula"]
+	path = saltstack-assets/saltstack-git-formula
+	url = https://github.com/bechtoldt/saltstack-git-formula
+[submodule "saltstack-assets/saltstack-repos-formula"]
+	path = saltstack-assets/saltstack-repos-formula
+	url = https://github.com/bechtoldt/saltstack-repos-formula
+[submodule "saltstack-assets/saltstack-tools-formula"]
+	path = saltstack-assets/saltstack-tools-formula
+	url = https://github.com/bechtoldt/saltstack-tools-formula
+[submodule "saltstack-assets/saltstack-users-formula"]
+	path = saltstack-assets/saltstack-users-formula
+	url = https://github.com/bechtoldt/saltstack-users-formula
+[submodule "saltstack-assets/saltstack-vim-formula"]
+	path = saltstack-assets/saltstack-vim-formula
+	url = https://github.com/bechtoldt/saltstack-vim-formula
