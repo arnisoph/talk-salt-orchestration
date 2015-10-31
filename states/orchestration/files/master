@@ -1,4 +1,4 @@
-autosign_file: /srv/salt/contrib/states/saltbox/files/orchestration/autosign.conf
+autosign_file: /srv/salt/states/orchestration/files/autosign.conf
 
 file_roots:
   base:

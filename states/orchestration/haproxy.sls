@@ -6,7 +6,7 @@ haproxy:
   file:
     - managed
     - name: /etc/haproxy/haproxy.cfg
-    - source: salt://saltbox/files/orchestration/haproxy.cfg
+    - source: salt://orchestration/files/haproxy.cfg
     - user: root
     - group: root
     - mode: 640

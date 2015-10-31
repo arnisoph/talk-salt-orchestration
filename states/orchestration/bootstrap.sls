@@ -9,7 +9,7 @@ salt_minion:
   file:
     - managed
     - name: /etc/salt/minion
-    - source: salt://saltbox/files/orchestration/minion
+    - source: salt://orchestration/files/minion
     - user: root
     - group: root
     - mode: 640
