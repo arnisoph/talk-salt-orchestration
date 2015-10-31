@@ -16,3 +16,6 @@
 [submodule "saltstack-assets/saltstack-vim-formula"]
 	path = saltstack-assets/saltstack-vim-formula
 	url = https://github.com/bechtoldt/saltstack-vim-formula
+[submodule "saltstack-assets/salt-modules"]
+	path = saltstack-assets/salt-modules
+	url = https://github.com/bechtoldt/salt-modules
