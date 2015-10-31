@@ -1,5 +1,5 @@
 base:
-  'E@cloudmaster* or E@fe* or E@mw* or E@db*':
+  '*':
     - match: compound
     - git
     - repos
