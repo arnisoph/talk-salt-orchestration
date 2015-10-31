@@ -2,14 +2,13 @@ autosign_file: /srv/salt/states/orchestration/files/autosign.conf
 
 file_roots:
   base:
-    - /srv/salt/
+    - /srv/salt
     - /srv/salt/states
     - /srv/salt/contrib/states
 
 pillar_roots:
   base:
-    - /srv/salt/pillar/examples
-    - /srv/salt/pillar/shared
+    - /srv/salt/pillar
 
 #peer:
 #  .*:
