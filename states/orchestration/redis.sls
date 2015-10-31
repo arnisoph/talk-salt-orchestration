@@ -15,5 +15,5 @@ redis:
       - service: redis
   service:
     - running
-    - name: redis
+    - name: redis-server
     - enable: True
