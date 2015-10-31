@@ -12,7 +12,3 @@ tools:
     tools:
       htop:
         ensure: installed
-      nmap-ncat:
-        ensure: installed
-
-
