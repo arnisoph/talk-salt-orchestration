@@ -27,3 +27,5 @@ reactor:
 #    - /srv/salt/contrib/reactor/salt/files/job_ret.sls
 #  - 'frontend/loadbalancer/pool/update':
 #    - /srv/salt/contrib/reactor/salt/files/lb_pool_update.sls
+
+log_level: debug
