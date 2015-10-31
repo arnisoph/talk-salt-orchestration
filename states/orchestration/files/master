@@ -2,7 +2,6 @@ autosign_file: /srv/salt/contrib/states/saltbox/files/orchestration/autosign.con
 
 file_roots:
   base:
-    - /srv/salt
     - /srv/salt/states
     - /srv/salt/contrib/states
 
@@ -17,13 +16,13 @@ pillar_roots:
 
 reactor:
   - 'salt/key':
-    - /srv/salt/contrib/reactor/saltbox/files/salt_key.sls
+    - /srv/salt/reactor/orchestration/salt_key.sls
   - 'salt/minion/*/start':
-    - /srv/salt/contrib/reactor/saltbox/files/minion_start.sls
+    - /srv/salt/reactor/orchestration/minion_start.sls
   - 'custom/minion/config_updated':
-    - /srv/salt/contrib/reactor/saltbox/files/minion_config_updated.sls
+    - /srv/salt/reactor/orchestration/minion_config_updated.sls
   - 'custom/minion/haste_server_started':
-    - /srv/salt/contrib/reactor/saltbox/files/haste_server_started.sls
+    - /srv/salt/reactor/orchestration/haste_server_started.sls
 #  - 'salt/job/*/ret/*':
 #    - /srv/salt/contrib/reactor/salt/files/job_ret.sls
 #  - 'frontend/loadbalancer/pool/update':
