@@ -2,6 +2,7 @@ autosign_file: /srv/salt/states/orchestration/files/autosign.conf
 
 file_roots:
   base:
+    - /srv/salt/
     - /srv/salt/states
     - /srv/salt/contrib/states
 
