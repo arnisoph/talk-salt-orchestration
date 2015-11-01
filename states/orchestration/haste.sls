@@ -58,20 +58,22 @@ haste_server_started:
     - name: custom/minion/haste_server_started
     - watch:
       - cmd: haste_server_service
-#  module:
-#    - wait
-#    - name: http.query
-#    - url: https://api.mailgun.net/v3/sandboxa74098442634497f9f966ce1c262b672.mailgun.org/messages
-#    - kwargs:
-#        backend: requests
-#        method: POST
-#        data:
-#          from: salt@{{ salt['grains.get']('id') }}
-#          to: mail@arnoldbechtoldt.com
-#          subject: 'Hooray, a new app backend ({{ salt['grains.get']('id') }})!'
-#          text: 'Haste Server started on {{ salt['grains.get']('id') }} ({{ salt['grains.get']('fqdn') }})'
-#        username: api
-#        password: {{ salt['pillar.get']('mailgun_apikey') }}
-#        hide_fields: []
-#    - watch:
-#      - cmd: haste_server_service
+{% if salt['pillar.get']('mailgun_apikey', None) %}
+  module:
+    - wait
+    - name: http.query
+    - url: https://api.mailgun.net/v3/sandboxa74098442634497f9f966ce1c262b672.mailgun.org/messages
+    - kwargs:
+        backend: requests
+        method: POST
+        data:
+          from: salt@{{ salt['grains.get']('id') }}
+          to: mail@arnoldbechtoldt.com
+          subject: 'Hooray, a new app backend ({{ salt['grains.get']('id') }})!'
+          text: 'Haste Server started on {{ salt['grains.get']('id') }} ({{ salt['grains.get']('fqdn') }})'
+        username: api
+        password: {{ salt['pillar.get']('mailgun_apikey') }}
+        hide_fields: []
+    - watch:
+      - cmd: haste_server_service
+{% endif %}
