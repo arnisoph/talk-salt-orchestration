@@ -2,7 +2,10 @@ repos:
   lookup:
     repos:
       node:
-        url: https://rpm.nodesource.com/pub/el/7/$basearch
+        #url: https://rpm.nodesource.com/pub/el/7/x86_64/
+        url: https://deb.nodesource.com/node_0.12
+        comps:
+          - main
         keyurl: https://rpm.nodesource.com/pub/el/NODESOURCE-GPG-SIGNING-KEY-EL
     #node_src:
     #    url: https://rpm.nodesource.com/pub/el/7/SRPMS
