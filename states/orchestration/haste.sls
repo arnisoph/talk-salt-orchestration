@@ -13,7 +13,7 @@ haste_server:
     - name: /srv/haste-server/config.js
     - formatter: json
     - dataset:
-        host: {{ salt['grains.get']('ip4_interfaces:eth0')[1] }}
+        host: {{ salt['grains.get']('ip4_interfaces:eth0')[0] }}
         port: 7777
         keyLength: 10
         maxLength: 400000
