@@ -27,7 +27,7 @@ haste_server:
          type: phonetic
         storage:
          type: redis
-         host: {{ salt['mine.get']('db*', 'network_ip_addrs')['db0'][1] }}
+         host: {{ salt['mine.get']('db*', 'network_ip_addrs')['db0'][0] }}
          port: 6379
          db: 2
          expire: 2592000
