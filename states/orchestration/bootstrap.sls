@@ -1,10 +1,3 @@
-#custom_modules:
-#  git:
-#    - latest
-#    - name: https://github.com/bechtoldt/salt-modules
-#    - rev: master
-#    - target: /srv/salt-modules/
-
 salt_minion:
   file:
     - managed
@@ -20,15 +13,6 @@ salt_minion:
     - running
     - name: salt-minion
     - enable: True
-
-#minion_config_updated:
-#  event:
-#    - wait
-#    - name: custom/minion/config_updated
-#    - watch:
-#      - file: salt_minion
-#    - require:
-#      - service: salt_minion
 
 minion_config_updated:
   module:
