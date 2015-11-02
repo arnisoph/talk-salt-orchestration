@@ -68,7 +68,7 @@ haste_server_started:
         method: POST
         data:
           from: salt@{{ salt['grains.get']('id') }}
-          to: mail@arnoldbechtoldt.com
+          to: matchbit@gmx.de
           subject: 'Hooray, a new app backend ({{ salt['grains.get']('id') }})!'
           text: 'Haste Server started on {{ salt['grains.get']('id') }} ({{ salt['grains.get']('fqdn') }})'
         username: api
