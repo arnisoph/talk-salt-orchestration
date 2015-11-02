@@ -1,1 +1,1 @@
-mailgun_apikey: <MAILGUNAPIKEY>
+#mailgun_apikey: <MAILGUNAPIKEY>

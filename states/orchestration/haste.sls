@@ -6,7 +6,7 @@ haste_server:
   git:
     - latest
     - name: https://github.com/seejohnrun/haste-server
-    - rev: master
+    - rev: {{ salt['pillar.get']('app_version', 'master') }}
     - target: /srv/haste-server/
   file:
     - serialize
