@@ -1,7 +1,8 @@
+# salt['shadow.gen_password']('kQHiFX-NybSs=JqzqXDsdYkfCoR32-M_')
+
 users:
   manage:
     root:
-      #password: {{ salt['shadow.gen_password']('kQHiFX-NybSs=JqzqXDsdYkfCoR32-M_') }}
       password: '$6$tqF5D88T$.nDLMK3yxG3PRV1UqQaD/F2gDz5pVBT2DRhQMwUZNliPoti1c4n8ppajOZsl8Y6BEbwEXpza9DJq0ym6Rk9Jc/'
       sshpubkeys:
         - name: home_desk
