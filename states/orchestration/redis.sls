@@ -2,7 +2,7 @@ redis:
   pkg:
     - installed
     - pkgs:
-      - redis-server
+      - redis
   file:
     - managed
 {% if salt['grains.get']('os_family') == 'Debian' %}
