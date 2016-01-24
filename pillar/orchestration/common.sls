@@ -1,5 +1,13 @@
 # salt['shadow.gen_password']('kQHiFX-NybSs=JqzqXDsdYkfCoR32-M_')
 
+git:
+  lookup:
+    config:
+      global:
+        contents: |
+          [http]
+            sslVerify = false
+
 users:
   manage:
     root:
