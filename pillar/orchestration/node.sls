@@ -1,3 +1,5 @@
+app_version: 45e19bc
+
 repos:
   lookup:
     repos:
